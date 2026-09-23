@@ -1,0 +1,4 @@
+Sample	Top overrepresented sequence
+ERR11437313_fastp	0.0
+ERR754081_1_filtered	1.907660027276362
+ERR754081_2_filtered	2.0162662712214923

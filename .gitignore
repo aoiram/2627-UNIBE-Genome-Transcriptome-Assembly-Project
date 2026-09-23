@@ -1,3 +1,9 @@
 .idea
 report/auxil
 report/out
+**.fastq.gz
+**.zip
+RNAseq_Sha
+Ms-0
+**.e
+**.o

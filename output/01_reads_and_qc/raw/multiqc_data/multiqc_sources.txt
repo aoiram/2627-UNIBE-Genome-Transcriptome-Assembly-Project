@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	ERR11437313	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/01_reads_and_qc/raw/ERR11437313_fastqc.zip
+FastQC	all_sections	ERR754081_1	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/01_reads_and_qc/raw/ERR754081_1_fastqc.zip
+FastQC	all_sections	ERR754081_2	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/01_reads_and_qc/raw/ERR754081_2_fastqc.zip

@@ -1,0 +1,6 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	ERR754081	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/02_trimming/illumina_report.json
+fastp	all_sections	ERR11437313	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/02_trimming/pacbio_report.json
+FastQC	all_sections	ERR754081_1_filtered	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/02_trimming/ERR754081_1_filtered_fastqc.zip
+FastQC	all_sections	ERR754081_2_filtered	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/02_trimming/ERR754081_2_filtered_fastqc.zip
+FastQC	all_sections	ERR11437313_fastp	/data/users/mamos/2627-UNIBE-Genome-Transcriptome-Assembly-Project/2627-UNIBE-Genome-Transcriptome-Assembly-Project/output/02_trimming/ERR11437313_fastp_fastqc.zip

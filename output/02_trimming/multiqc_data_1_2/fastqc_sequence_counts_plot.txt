@@ -1,0 +1,4 @@
+Sample	Unique Reads	Duplicate Reads
+ERR11437313_fastp	249954.0	14142.0
+ERR754081_1_filtered	9072548.0	11279873.0
+ERR754081_2_filtered	9164650.0	11187771.0
