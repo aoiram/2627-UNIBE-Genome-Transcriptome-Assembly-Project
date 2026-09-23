@@ -1,0 +1,80 @@
+% TITLE
+% +---------------------------------------------------------------+
+
+\thispagestyle{empty}
+
+\begin{minipage}[t]{6cm}
+    \vspace{0pt}%usefull to align top
+    \includegraphics[width=3cm]{\docLogo}
+\end{minipage}\hfill\begin{minipage}[t]{10cm}%
+    \vspace{0pt}%usefull to align top
+    \small%
+    \begin{flushright}%
+        \docDpt\\
+        \docFiliere\\
+        \docOrient
+    \end{flushright}
+\end{minipage}
+
+\vspace{7cm}
+
+\begin{center}
+
+{\Huge \bfseries \docTitle}
+
+  \ifthenelse{\isempty{\docSubtitle}}%
+        {empty}%empty
+    {\Large \docSubtitle}%not empty
+\end{center}
+    
+\vspace{5cm}
+
+\normalsize
+\begin{center}
+    \begin{tabular}{r@{\hskip 13mm}l}
+        \textbf{Student} & \docAuthor \\[0.1cm]
+        \textbf{Study programm} & \docOrient \\[0.1cm]
+        \textbf{Academic year} & \docAcademicYears \\[0.1cm]
+    \end{tabular}
+\end{center}
+
+
+\vspace{1cm}
+
+\begin{flushright}
+    \docDate
+\end{flushright}
+
+\vspace{0cm}
+
+\cleardoublepage   
+
+\cleardoublepage
+
+% Abstract
+% +---------------------------------------------------------------+
+\thispagestyle{plain}
+\input{chapters/0_abstract}
+
+% Authentification
+% +---------------------------------------------------------------+
+
+% \chapter{Authentification}
+% \thispagestyle{plain}
+
+% The undersigned, \docAuthor, hereby attests to having carried out this work and to having used
+% no other source than those expressly mentioned.
+
+% \vspace{2cm}
+
+% \noindent \docDate
+
+% \vspace{3cm}
+
+% \begin{flushright}
+%     \begin{minipage}{7cm}
+%         {\docAuthor}
+%     \end{minipage}\hfill
+% \end{flushright}
+
+\cleardoublepage

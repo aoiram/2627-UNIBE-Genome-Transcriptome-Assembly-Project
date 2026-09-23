@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt,twoside,openright]{book} % Type du document
+
+% compile using : pdflatex, bibtex, pdflatex, pdflatex
+
+% +---------------------------------------------------------------+
+% | Language
+% +---------------------------------------------------------------+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\newif\ifisconfidential    \isconfidentialfalse
+% \newif\ifisconfidential	\isconfidentialtrue
+
+\newif\ifisdraft\isdrafttrue
+% \newif\ifisdraft\isdraftfalse
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=blue,
+    pdftitle={report},
+    pdfpagemode=FullScreen,
+}
+
+% +---------------------------------------------------------------+
+% | Parameters
+% +---------------------------------------------------------------+
+
+\newcommand{\docLogo}{template/logo_unibern.png}
+% \newcommand{\docLogo}{template/logo_unifr.png}
+
+\newcommand{\docTitle}{TODO TITLE}
+\newcommand{\docSubtitle}{TODO SUBITLTE}%laisser vide si pas de sous-titre
+\newcommand{\docAuthor}{Mario Amos}
+
+\newcommand{\docAcademicYears}{2025-2026}
+
+\newcommand{\docDpt}{University of Bern}
+\newcommand{\docFiliere}{Faculty of Science}
+\newcommand{\docOrient}{Bioinformatics and Computational Biology}
+
+\newcommand{\docDate}{Bern, \today}
+
+% uncomment if confidential / comment if not confiential
+% \isconfidentialtrue
+
+% +-[set path]-------------------------------------+
+\usepackage{template/template}
+\usepackage{template/style}
+\usepackage{template/macros}
+
+%\graphicspath{images/}
+\usepackage{hyperref}%Doit etre le dernier package
+
+\begin{document}
+
+    \frontmatter
+    \pagestyle{empty}
+
+    \input{template/header}
+
+% TOC
+% +---------------------------------------------------------------+
+    \pagestyle{plain}
+    \hypersetup{
+        citecolor=blue,
+        linkcolor=black
+    }
+    \markboth{Table of contents}{}
+    \tableofcontents
+    \label{endoftoc}
+    \clearpage
+    \hypersetup{
+        citecolor=blue,
+        linkcolor=blue
+    }
+
+
+% Content
+% +---------------------------------------------------------------+
+
+    \mainmatter
+    \global\Introfalse
+    \pagestyle{plain}
+
+    \input{chapters/1_introduction}
+
+    \input{chapters/2_material_and_methods}
+
+    \input{chapters/3_results}
+
+    \input{chapters/4_conclusion}
+
+% Supplentary materials
+
+% +---------------------------------------------------------------+
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \markboth{Bibliography}{Bibliography}
+    \bibliographystyle{IEEEtran}
+    \bibliography{biblio}
+    \nocite{*} %ajoute tout ce qu'il y a dans le bibtex
+
+    \hypersetup{
+        citecolor=blue,
+        linkcolor=black
+    }
+    \phantomsection
+    \listoffigures
+    \addcontentsline{toc}{chapter}{Table of figures}
+    \markboth{Table of figures}{Table of figures}
+
+    \phantomsection
+    \listoftables
+    \addcontentsline{toc}{chapter}{List of tables}
+    \markboth{List of tables}{List of tables}
+    \hypersetup{
+        citecolor=blue,
+        linkcolor=blue
+    }
+
+    \phantomsection
+    \cleardoublepage
+    \appendix
+    \input{chapters/5_appendices}
+
+
+% Annexes
+% +---------------------------------------------------------------+
+    \appendix
+
+    % \includepdf[pages=-, scale=1, angle=90,  offset=0 0]{HEIG-TB-CARAMLLM/doc_latex/tb-planification.pdf}
+
+\end{document}
