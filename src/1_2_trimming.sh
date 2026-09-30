@@ -55,10 +55,10 @@ fastp \
 
 # FASTQC ON ALL OF IT
 
-#apptainer exec \
-#--bind $WORKDIR \
-#/containers/apptainer/fastqc-0.12.1.sif \
-#fastqc -t ${SLURM_CPUS_PER_TASK} $WORKDIR/output/02_trimming/ERR754081_1_filtered.fastq.gz $WORKDIR/output/02_trimming/ERR754081_2_filtered.fastq.gz -o $WORKDIR/output/02_trimming/;
+apptainer exec \
+--bind $WORKDIR \
+/containers/apptainer/fastqc-0.12.1.sif \
+fastqc -t ${SLURM_CPUS_PER_TASK} $WORKDIR/output/02_trimming/ERR754081_1_filtered.fastq.gz $WORKDIR/output/02_trimming/ERR754081_2_filtered.fastq.gz -o $WORKDIR/output/02_trimming/;
 
 apptainer exec \
 --bind $WORKDIR \
