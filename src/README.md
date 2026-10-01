@@ -1,5 +1,11 @@
 # Source code
 
+Make sure scripts are pointing to the good input / output files or folder.
+
+Run them with `sbatch xxx.sh` in the numerotated order.
+
+After 1_3_jellyfish.sh, move filtered/trimmed fasta in a folder you can easily access to. Make sure scripts `2_x_*.sh` points to theses folders.
+
 # Results
 
 Questions:
